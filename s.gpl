@@ -1,0 +1,9 @@
+set terminal png
+set output 'selection_sort.png'
+set title "selection Sort: Number of Elements vs Time Taken"
+set xlabel "Number of Elements"
+set ylabel "Time Taken (seconds)"
+set grid
+plot "selection_sort.dat" using 1:2 with linespoints title "Merge Sort"
+pause -1 "Press Enter to exit"
+
